@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<network>
+<unicom>
+<methodName>NetPanel.NetPanel(org.jhotdraw.draw.DrawingEditor)</methodName>
+<methodName>NetPanel.NetPanel()</methodName>
+<methodName>NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</methodName>
+<methodName>NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</methodName>
+<methodName>NetPanel.strokeDecorationPopupButton</methodName>
+<methodName>NetPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</methodName>
+<methodName>NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</methodName>
+<methodName>NetPanel.strokeWidthPopupButton</methodName>
+<methodName>NetPanel.addStrokeDecorationButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</methodName>
+<methodName>NetPanel.undoData(java.awt.event.ActionEvent)</methodName>
+<methodName>NetPanel.UndoDrawing</methodName>
+<methodName>UndoRedoManager.undoOrRedoInProgress</methodName>
+<methodName>UndoRedoManager.undoAction</methodName>
+<methodName>UndoRedoManager.UndoRedoManager()</methodName>
+<methodName>UndoRedoManager.getlabelsUndo()</methodName>
+<methodName>UndoRedoManager.redoAction</methodName>
+<methodName>UndoRedoManager.getUndoAction()</methodName>
+<methodName>UndoRedoManager.getlabelsRedo()</methodName>
+<methodName>UndoRedoManager.updateActions(java.awt.event.ActionEvent)</methodName>
+<methodName>UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</methodName>
+<methodName>UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</methodName>
+<methodName>UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</methodName>
+<methodName>UndoRedoManager.labelsRedo</methodName>
+<methodName>UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</methodName>
+<methodName>UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</methodName>
+<methodName>UndoRedoManager.labelsUndo</methodName>
+<methodName>UndoRedoManager.getRedoAction()</methodName>
+<methodName>RestoreDataEdit.figure</methodName>
+<methodName>RestoreDataEdit.oldRestoreData</methodName>
+<methodName>RestoreDataEdit.replaceEdit(javax.swing.undo.UndoableEdit)</methodName>
+<methodName>RestoreDataEdit.addEdit(javax.swing.undo.UndoableEdit)</methodName>
+<methodName>RestoreDataEdit.newRestoreData</methodName>
+<methodName>RestoreDataEdit.getPresentationName()</methodName>
+<methodName>RestoreDataEdit.RestoreDataEdit(org.jhotdraw.draw.Figure, java.lang.Object)</methodName>
+<methodName>RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</methodName>
+<methodName>RestoreDataEdit.redoData(java.lang.Object)</methodName>
+</unicom>
+<unicom>
+<methodName>SVGPanel.getDrawingToViewTransform()</methodName>
+<methodName>SVGPanel.static {}</methodName>
+<methodName>SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</methodName>
+<methodName>SVGPanel.viewToDrawing(java.awt.Point)</methodName>
+<methodName>SVGPanel.translateSVG</methodName>
+<methodName>SVGPanel.SVGPanel()</methodName>
+<methodName>SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</methodName>
+<methodName>SVGPanel.scaleFactorSVG</methodName>
+<methodName>SVGPanel.t</methodName>
+</unicom>
+</network>

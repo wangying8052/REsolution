@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  An excerpt of an egocentric social network  -->
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+<graph edgedefault="undirected">
+<!-- data schema -->
+<key id="name" for="node" attr.name="name" attr.type="string"/>
+<key id="type" for="node" attr.name="type" attr.type="string"/>
+<node id="2"><data key="name">NetPanel</data><data key="type">non_inheritance</data></node>
+<node id="6"><data key="name">UndoRedoManager</data><data key="type">non_inheritance</data></node>
+<node id="4"><data key="name">RestoreDataEdit</data><data key="type">non_inheritance</data></node>
+<node id="1"><data key="name">DrawingPanel</data><data key="type">non_inheritance</data></node>
+<node id="5"><data key="name">SVGPanel</data><data key="type">non_inheritance</data></node>
+<node id="3"><data key="name">PertPanel</data><data key="type">non_inheritance</data></node>
+<edge source="2" target="6"></edge>
+<edge source="4" target="6"></edge>
+<edge source="6" target="2"></edge>
+<edge source="6" target="4"></edge>
+</graph></graphml>

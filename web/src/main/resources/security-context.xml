@@ -1,0 +1,42 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:sec="http://www.springframework.org/schema/security" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+          http://www.springframework.org/schema/security
+          http://www.springframework.org/schema/security/spring-security-3.1.xsd">
+
+	<sec:global-method-security
+		pre-post-annotations="enabled" />
+
+    <sec:http pattern="/resources/**" security="none"/>
+
+	<sec:http use-expressions="true" auto-config="true">
+		<sec:form-login login-page="/register" authentication-failure-url="/register?login_error=1" authentication-success-handler-ref="authenticationSuccessHandler" />
+		<sec:logout logout-url="/j_spring_security_logout" logout-success-url="/register" />
+		<sec:remember-me key="sessionKey" token-validity-seconds="3600" user-service-ref="userSecurityService" />
+
+		<sec:intercept-url pattern="/index.html" access="permitAll" />
+		<sec:intercept-url pattern="/register" access="isAnonymous()" />
+		<sec:intercept-url pattern="/user/**" access="isAuthenticated()" />
+        <sec:intercept-url pattern="/interview/**" access="isAuthenticated()" />
+        <sec:intercept-url pattern="/question/**" access="isAuthenticated()" />
+		<sec:intercept-url pattern="/ua" access="isAnonymous()" />
+
+        <sec:access-denied-handler ref="accessDeniedHandler" />
+	</sec:http>
+
+	<sec:authentication-manager alias="authenticationManager">
+		<sec:authentication-provider user-service-ref="userSecurityService">
+			<sec:password-encoder hash="md5"/>
+		</sec:authentication-provider>
+	</sec:authentication-manager>
+
+    <bean id="accessDeniedHandler" class="ua.com.itinterview.web.security.RedirectAccessDeniedHandler" />
+
+	<bean id="userSecurityService" class="ua.com.itinterview.web.security.UserSecurityService" />
+	
+	<bean id="authenticationUtils" class="ua.com.itinterview.web.security.AuthenticationUtils" />
+
+    <bean id="authenticationSuccessHandler" class="ua.com.itinterview.web.security.UserAuthenticationSuccessHandler" />
+
+</beans>

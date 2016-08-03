@@ -1,0 +1,1856 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE dependencies SYSTEM "/dependencies.dtd">
+
+<dependencies>
+    <package confirmed="yes">
+        <name></name>
+        <class confirmed="yes">
+            <name>DrawingPanel</name>
+            <outbound type="class" confirmed="no">java.lang.Object</outbound>
+            <inbound type="class" confirmed="yes">PertPanel</inbound>
+            <inbound type="class" confirmed="yes">SVGPanel</inbound>
+            <feature confirmed="yes">
+                <name>DrawingPanel.DrawingPanel()</name>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.Object()</feoutbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.PertPanel()</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.SVGPanel()</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.addAttributesButtonsTo(org.jhotdraw.draw.DrawingEditor)</name>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.bar</feoutbound>
+                <outbound type="class" confirmed="no">javax.swing.Action</outbound>
+                <outbound type="class" confirmed="no">javax.swing.JButton</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JButton.setFocusable(boolean)</feoutbound>
+                <outbound type="class" confirmed="no">javax.swing.JToolBar</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JToolBar.add(javax.swing.Action)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.PickAttributesAction.PickAttributesAction(org.jhotdraw.draw.DrawingEditor)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</name>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</name>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.bar</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">javax.swing.JToolBar</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JToolBar.addSeparator()</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.CreationTool.CreationTool(org.jhotdraw.draw.Figure)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.DiamondFigure.DiamondFigure()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.EllipseFigure.EllipseFigure()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Figure</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.RectangleFigure.RectangleFigure()</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.RoundRectangleFigure.RoundRectangleFigure()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Tool</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.ToolBarButtonFactory.addToolTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.Tool, java.lang.String, org.jhotdraw.util.ResourceBundleUtil)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getLAFBundle(java.lang.String)</feoutbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.addZoomButtonsTo(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</name>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.bar</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Component</outbound>
+                <outbound type="class" confirmed="no">java.awt.Graphics2D</outbound>
+                <outbound type="class" confirmed="no">javax.swing.AbstractButton</outbound>
+                <outbound type="class" confirmed="no">javax.swing.JToolBar</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JToolBar.add(java.awt.Component)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.bar</name>
+                <outbound type="class" confirmed="no">javax.swing.JToolBar</outbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addAttributesButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addZoomButtonsTo(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.constrainer</name>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Constrainer</outbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.static {}</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</name>
+                <outbound type="class" confirmed="no">java.awt.Graphics2D</outbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.String.valueOf(int)</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.StringBuilder</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.StringBuilder.StringBuilder(java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.StringBuilder.append(java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.StringBuilder.toString()</feoutbound>
+                <outbound type="class" confirmed="no">java.util.Collection</outbound>
+                <feoutbound type="feature" confirmed="no">java.util.Collection.iterator()</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.util.Collection.size()</feoutbound>
+                <outbound type="class" confirmed="no">java.util.Iterator</outbound>
+                <feoutbound type="feature" confirmed="no">java.util.Iterator.next()</feoutbound>
+                <outbound type="class" confirmed="no">javax.swing.AbstractButton</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.DrawingEditor.getDrawingViews()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingView</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.DrawingView.getScaleFactor()</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.JPopupButton()</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.setFocusable(boolean)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.setText(java.lang.String)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.configureToolBarButton(javax.swing.AbstractButton, java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getLAFBundle(java.lang.String)</feoutbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addZoomButtonsTo(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</name>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.constrainer</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.emptyDrawingLabel</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.scaleFactor</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.translate</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Graphics</outbound>
+                <outbound type="class" confirmed="no">java.awt.Graphics2D</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Graphics2D.create()</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Graphics2D.dispose()</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Graphics2D.getTransform()</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Graphics2D.setTransform(java.awt.geom.AffineTransform)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Point</outbound>
+                <outbound type="class" confirmed="no">java.awt.Rectangle</outbound>
+                <outbound type="class" confirmed="no">java.awt.geom.AffineTransform</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.AffineTransform.scale(double, double)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.AffineTransform.translate(double, double)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.y</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Rectangle2D$Double</outbound>
+                <outbound type="class" confirmed="no">javax.swing.JLabel</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JLabel.paint(java.awt.Graphics)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Constrainer</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.Constrainer.draw(java.awt.Graphics2D, org.jhotdraw.draw.DrawingView)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingView</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</name>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.constrainer</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.emptyDrawingLabel</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.scaleFactor</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.translate</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Rectangle</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.Rectangle(int, int, int, int)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.y</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Rectangle2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Rectangle2D$Double.height</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Rectangle2D$Double.width</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Rectangle2D$Double.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Rectangle2D$Double.y</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.hashCode()</feoutbound>
+                <outbound type="class" confirmed="no">javax.swing.JLabel</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JLabel.getAlignmentX()</feoutbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JLabel.getAlignmentY()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Constrainer</outbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.emptyDrawingLabel</name>
+                <outbound type="class" confirmed="no">javax.swing.JLabel</outbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.getEmptyDrawingMessage()</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.setEmptyDrawingMessage(java.lang.String)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.getEmptyDrawingMessage()</name>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.emptyDrawingLabel</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">javax.swing.JLabel</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JLabel.getText()</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.scaleFactor</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.static {}</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.setEmptyDrawingMessage(java.lang.String)</name>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.emptyDrawingLabel</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">javax.swing.JLabel</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JLabel.JLabel(java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JLabel.getText()</feoutbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JLabel.setHorizontalAlignment(int)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.static {}</name>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.constrainer</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.scaleFactor</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.translate</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.Point2D$Double(double, double)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Constrainer</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.GridConstrainer.GridConstrainer(double, double)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.translate</name>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.static {}</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>DrawingPanel.viewToDrawing(java.awt.Point)</name>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.emptyDrawingLabel</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.scaleFactor</feoutbound>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.translate</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Point</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Point.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Point.y</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.Point2D$Double(double, double)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.y</feoutbound>
+                <outbound type="class" confirmed="no">javax.swing.JLabel</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JLabel.getAlignmentX()</feoutbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JLabel.getAlignmentY()</feoutbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="yes">
+            <name>NetPanel</name>
+            <outbound type="class" confirmed="yes">PertPanel</outbound>
+            <feature confirmed="yes">
+                <name>NetPanel.NetPanel()</name>
+                <feoutbound type="feature" confirmed="yes">PertPanel.PertPanel()</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>NetPanel.NetPanel(org.jhotdraw.draw.DrawingEditor)</name>
+                <feoutbound type="feature" confirmed="yes">NetPanel.strokeDecorationPopupButton</feoutbound>
+                <feoutbound type="feature" confirmed="yes">NetPanel.strokeWidthPopupButton</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.DrawingEditor.setEnabled(boolean)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.getAutoscrolls()</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.isVisible()</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>NetPanel.UndoDrawing</name>
+                <outbound type="class" confirmed="no">javax.swing.JToolBar</outbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoData(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>NetPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</name>
+                <feoutbound type="feature" confirmed="yes">NetPanel.strokeDecorationPopupButton</feoutbound>
+                <feoutbound type="feature" confirmed="yes">NetPanel.strokeWidthPopupButton</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.doClick()</feoutbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addStrokeDecorationButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</name>
+                <feoutbound type="feature" confirmed="yes">NetPanel.addStrokeDecorationButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feoutbound>
+                <feoutbound type="feature" confirmed="yes">NetPanel.strokeDecorationPopupButton</feoutbound>
+                <feoutbound type="feature" confirmed="yes">NetPanel.strokeWidthPopupButton</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <feoutbound type="feature" confirmed="no">java.util.ArrayList.ArrayList()</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.util.ArrayList.remove(java.lang.Object)</feoutbound>
+                <outbound type="class" confirmed="no">javax.swing.Action</outbound>
+                <outbound type="class" confirmed="no">javax.swing.JToolBar</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JToolBar.JToolBar()</feoutbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JToolBar.addSeparator()</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.CreationTool.CreationTool(org.jhotdraw.draw.Figure)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.DiamondFigure.DiamondFigure()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Figure</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Tool</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.getAction()</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.ToolBarButtonFactory.addToolTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.Tool, java.lang.String, org.jhotdraw.util.ResourceBundleUtil)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getLAFBundle(java.lang.String)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>NetPanel.addStrokeDecorationButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</name>
+                <feoutbound type="feature" confirmed="yes">NetPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feoutbound>
+                <feoutbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.event.ActionEvent</outbound>
+                <outbound type="class" confirmed="no">javax.swing.JToolBar</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</name>
+                <feoutbound type="feature" confirmed="yes">NetPanel.strokeDecorationPopupButton</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">javax.swing.AbstractButton</outbound>
+                <outbound type="class" confirmed="no">javax.swing.JToolBar</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.JPopupButton()</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.setFocusable(boolean)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.configureToolBarButton(javax.swing.AbstractButton, java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getLAFBundle(java.lang.String)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>NetPanel.strokeDecorationPopupButton</name>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.NetPanel(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>NetPanel.strokeWidthPopupButton</name>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.NetPanel(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>NetPanel.undoData(java.awt.event.ActionEvent)</name>
+                <feoutbound type="feature" confirmed="yes">NetPanel.UndoDrawing</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.UndoRedoManager()</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedoInProgress</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.updateActions(java.awt.event.ActionEvent)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.event.ActionEvent</outbound>
+                <outbound type="class" confirmed="no">javax.swing.JToolBar</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JToolBar.addSeparator()</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</name>
+                <feoutbound type="feature" confirmed="yes">NetPanel.UndoDrawing</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.UndoRedoManager()</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedoInProgress</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.updateActions(java.awt.event.ActionEvent)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.event.ActionEvent</outbound>
+                <outbound type="class" confirmed="no">java.beans.PropertyChangeListener</outbound>
+                <outbound type="class" confirmed="no">javax.swing.JToolBar</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JToolBar.repaint()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.DrawingEditor.removePropertyChangeListener(java.beans.PropertyChangeListener)</feoutbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addStrokeDecorationButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="yes">
+            <name>PertPanel</name>
+            <outbound type="class" confirmed="yes">DrawingPanel</outbound>
+            <inbound type="class" confirmed="yes">NetPanel</inbound>
+            <feature confirmed="yes">
+                <name>PertPanel.FontButton</name>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.static {}</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.PertPanel()</name>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.DrawingPanel()</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.scaleFactorPert</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.translatePert</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.Point2D$Double(double, double)</feoutbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.NetPanel()</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</name>
+                <feoutbound type="feature" confirmed="yes">PertPanel.FontButton</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.createPopupButton</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Rectangle</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.Rectangle(int, int, int, int)</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">javax.swing.Action</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.AttributeKey</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.AttributeKey.toString()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.DefaultAttributeAction.DefaultAttributeAction(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.setAction(javax.swing.Action, java.awt.Rectangle)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.setColumnCount(int, boolean)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getLAFBundle(java.lang.String)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</name>
+                <feoutbound type="feature" confirmed="yes">PertPanel.FontButton</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.createPopupButton</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.labels</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Point</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Point.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Point.y</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">javax.swing.AbstractButton</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.DrawingEditor.isEnabled()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.getMousePosition(boolean)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.setFocusable(boolean)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.setLocation(int, int)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.configureToolBarButton(javax.swing.AbstractButton, java.lang.String)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</name>
+                <feoutbound type="feature" confirmed="yes">PertPanel.createPopupButton</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.labels</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Rectangle</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.height</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.width</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.y</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">javax.swing.AbstractButton</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JToggleButton.JToggleButton()</feoutbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JToggleButton.getBounds()</feoutbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JToggleButton.setFocusable(boolean)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.DrawingEditor</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.DrawingEditor.isEnabled()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.paintImmediately(int, int, int, int)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.configureToolBarButton(javax.swing.AbstractButton, java.lang.String)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.addFontButtonsTo()</name>
+                <feoutbound type="feature" confirmed="yes">PertPanel.FontButton</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.createPopupButton</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.labels</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Rectangle</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.height</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.width</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.y</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">javax.swing.AbstractButton</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.JPopupButton()</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.getBounds()</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.paintImmediately(int, int, int, int)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.setFocusable(boolean)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.configureToolBarButton(javax.swing.AbstractButton, java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getLAFBundle(java.lang.String)</feoutbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.createPopupButton</name>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.static {}</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.drawBackground(java.awt.Graphics2D)</name>
+                <feoutbound type="feature" confirmed="yes">PertPanel.labelsDrawing</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.scaleFactorPert</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.translatePert</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Graphics2D</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Graphics2D.drawString(java.lang.String, int, int)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Graphics2D.fillRect(int, int, int, int)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Graphics2D.getClipBounds()</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Rectangle</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.height</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.width</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.y</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.toString()</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getTip(java.lang.String)</feoutbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.drawGrid(java.awt.Graphics2D)</name>
+                <feoutbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.labelsDrawing</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.translatePert</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Graphics2D</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Graphics2D.drawString(java.lang.String, int, int)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Graphics2D.translate(double, double)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.getX()</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.getY()</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.hashCode()</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.toString()</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">java.util.ResourceBundle</outbound>
+                <feoutbound type="feature" confirmed="no">java.util.ResourceBundle.clearCache()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getBundle()</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getString(java.lang.String)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.getEmptyDrawingMessage()</name>
+                <feoutbound type="feature" confirmed="yes">PertPanel.labelsDrawing</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.translatePert</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.toString()</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getString(java.lang.String)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.labels</name>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.labelsDrawing</name>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.getEmptyDrawingMessage()</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.setEmptyDrawingMessage(java.lang.String)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.scaleFactorPert</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.PertPanel()</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.setEmptyDrawingMessage(java.lang.String)</name>
+                <feoutbound type="feature" confirmed="yes">PertPanel.labelsDrawing</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getLAFBundle(java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getTip(java.lang.String)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.static {}</name>
+                <feoutbound type="feature" confirmed="yes">PertPanel.FontButton</feoutbound>
+                <feoutbound type="feature" confirmed="yes">PertPanel.createPopupButton</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.action.JPopupButton</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.action.JPopupButton.JPopupButton()</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>PertPanel.translatePert</name>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.PertPanel()</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.getEmptyDrawingMessage()</feinbound>
+            </feature>
+        </class>
+        <class confirmed="yes">
+            <name>RestoreDataEdit</name>
+            <outbound type="class" confirmed="no">java.lang.Object</outbound>
+            <feature confirmed="yes">
+                <name>RestoreDataEdit.RestoreDataEdit(org.jhotdraw.draw.Figure, java.lang.Object)</name>
+                <feoutbound type="feature" confirmed="yes">RestoreDataEdit.newRestoreData</feoutbound>
+                <feoutbound type="feature" confirmed="yes">RestoreDataEdit.oldRestoreData</feoutbound>
+                <feoutbound type="feature" confirmed="yes">RestoreDataEdit.redoData(java.lang.Object)</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.Object()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Figure</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.Figure.getRestoreData()</feoutbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>RestoreDataEdit.addEdit(javax.swing.undo.UndoableEdit)</name>
+                <feoutbound type="feature" confirmed="yes">RestoreDataEdit.oldRestoreData</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <outbound type="class" confirmed="no">javax.swing.undo.UndoableEdit</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.undo.UndoableEdit.addEdit(javax.swing.undo.UndoableEdit)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>RestoreDataEdit.figure</name>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Figure</outbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoData(java.lang.Object)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>RestoreDataEdit.getPresentationName()</name>
+                <feoutbound type="feature" confirmed="yes">RestoreDataEdit.newRestoreData</feoutbound>
+                <feoutbound type="feature" confirmed="yes">RestoreDataEdit.oldRestoreData</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.toString()</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.String.valueOf(java.lang.Object)</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.StringBuilder</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.StringBuilder.StringBuilder(java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.StringBuilder.append(java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.StringBuilder.toString()</feoutbound>
+                <outbound type="class" confirmed="no">java.util.Locale</outbound>
+                <feoutbound type="feature" confirmed="no">java.util.Locale.getDefault()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getFormatted(java.lang.String, java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getLAFBundle(java.lang.String, java.util.Locale)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getString(java.lang.String)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>RestoreDataEdit.newRestoreData</name>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.RestoreDataEdit(org.jhotdraw.draw.Figure, java.lang.Object)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.replaceEdit(javax.swing.undo.UndoableEdit)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>RestoreDataEdit.oldRestoreData</name>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.RestoreDataEdit(org.jhotdraw.draw.Figure, java.lang.Object)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.addEdit(javax.swing.undo.UndoableEdit)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>RestoreDataEdit.redoData(java.lang.Object)</name>
+                <feoutbound type="feature" confirmed="yes">RestoreDataEdit.figure</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <outbound type="class" confirmed="no">javax.swing.undo.CannotRedoException</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Figure</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.Figure.changed()</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.Figure.restoreTo(java.lang.Object)</feoutbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.RestoreDataEdit(org.jhotdraw.draw.Figure, java.lang.Object)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</name>
+                <feoutbound type="feature" confirmed="yes">RestoreDataEdit.figure</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.UndoRedoManager()</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedoInProgress</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.updateActions(java.awt.event.ActionEvent)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.event.ActionEvent</outbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <outbound type="class" confirmed="no">javax.swing.undo.CannotRedoException</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Figure</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.Figure.restoreTo(java.lang.Object)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.Figure.willChange()</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>RestoreDataEdit.replaceEdit(javax.swing.undo.UndoableEdit)</name>
+                <feoutbound type="feature" confirmed="yes">RestoreDataEdit.newRestoreData</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <outbound type="class" confirmed="no">javax.swing.undo.UndoableEdit</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.undo.UndoableEdit.replaceEdit(javax.swing.undo.UndoableEdit)</feoutbound>
+            </feature>
+        </class>
+        <class confirmed="yes">
+            <name>SVGPanel</name>
+            <outbound type="class" confirmed="yes">DrawingPanel</outbound>
+            <feature confirmed="yes">
+                <name>SVGPanel.SVGPanel()</name>
+                <feoutbound type="feature" confirmed="yes">DrawingPanel.DrawingPanel()</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</name>
+                <feoutbound type="feature" confirmed="yes">SVGPanel.scaleFactorSVG</feoutbound>
+                <feoutbound type="feature" confirmed="yes">SVGPanel.translateSVG</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Rectangle</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.Rectangle(int, int, int, int)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.y</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Rectangle2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Rectangle2D$Double.height</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Rectangle2D$Double.width</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Rectangle2D$Double.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Rectangle2D$Double.y</feoutbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>SVGPanel.getDrawingToViewTransform()</name>
+                <feoutbound type="feature" confirmed="yes">SVGPanel.scaleFactorSVG</feoutbound>
+                <feoutbound type="feature" confirmed="yes">SVGPanel.translateSVG</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.AffineTransform</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.AffineTransform.AffineTransform()</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.AffineTransform.scale(double, double)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.AffineTransform.translate(double, double)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.y</feoutbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>SVGPanel.scaleFactorSVG</name>
+                <feinbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.getDrawingToViewTransform()</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.static {}</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.viewToDrawing(java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</name>
+                <feoutbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feoutbound>
+                <feoutbound type="feature" confirmed="yes">SVGPanel.getDrawingToViewTransform()</feoutbound>
+                <feoutbound type="feature" confirmed="yes">SVGPanel.t</feoutbound>
+                <feoutbound type="feature" confirmed="yes">SVGPanel.translateSVG</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Point</outbound>
+                <outbound type="class" confirmed="no">java.awt.Rectangle</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.getMaxX()</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Rectangle.getMaxY()</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.AffineTransform</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.AffineTransform.setToQuadrantRotation(int, double, double)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.y</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Rectangle2D$Double</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>SVGPanel.static {}</name>
+                <feoutbound type="feature" confirmed="yes">SVGPanel.scaleFactorSVG</feoutbound>
+                <feoutbound type="feature" confirmed="yes">SVGPanel.translateSVG</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.Point2D$Double(double, double)</feoutbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>SVGPanel.t</name>
+                <outbound type="class" confirmed="no">java.awt.geom.AffineTransform</outbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>SVGPanel.translateSVG</name>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.getDrawingToViewTransform()</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.static {}</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.viewToDrawing(java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>SVGPanel.viewToDrawing(java.awt.Point)</name>
+                <feoutbound type="feature" confirmed="yes">SVGPanel.scaleFactorSVG</feoutbound>
+                <feoutbound type="feature" confirmed="yes">SVGPanel.translateSVG</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.Point</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Point.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.Point.y</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.geom.Point2D$Double</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.Point2D$Double(double, double)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.x</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.awt.geom.Point2D$Double.y</feoutbound>
+            </feature>
+        </class>
+        <class confirmed="yes">
+            <name>UndoRedoManager</name>
+            <outbound type="class" confirmed="no">java.lang.Object</outbound>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</name>
+                <feoutbound type="feature" confirmed="yes">RestoreDataEdit.RestoreDataEdit(org.jhotdraw.draw.Figure, java.lang.Object)</feoutbound>
+                <feoutbound type="feature" confirmed="yes">RestoreDataEdit.figure</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.labelsRedo</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.redoAction</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.event.ActionEvent</outbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.toString()</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.String.valueOf(java.lang.Object)</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.StringBuilder</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.StringBuilder.StringBuilder(java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.StringBuilder.append(java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.StringBuilder.toString()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.app.action.RedoAction</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.app.action.RedoAction.putValue(java.lang.String, java.lang.Object)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.app.action.RedoAction.setEnabled(boolean)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.draw.Figure</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.draw.Figure.changed()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getLAFBundle(java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getString(java.lang.String)</feoutbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.updateActions(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.UndoRedoManager()</name>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.Object()</feoutbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoData(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</name>
+                <feoutbound type="feature" confirmed="yes">NetPanel.UndoDrawing</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.labelsUndo</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.undoAction</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.event.ActionEvent</outbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.toString()</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.String.valueOf(java.lang.Object)</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.StringBuilder</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.StringBuilder.StringBuilder(java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.StringBuilder.append(java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.StringBuilder.toString()</feoutbound>
+                <outbound type="class" confirmed="no">javax.swing.JToolBar</outbound>
+                <feoutbound type="feature" confirmed="no">javax.swing.JToolBar.requestFocus()</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.app.action.UndoAction</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.app.action.UndoAction.putValue(java.lang.String, java.lang.Object)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.app.action.UndoAction.setEnabled(boolean)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getLAFBundle(java.lang.String)</feoutbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getString(java.lang.String)</feoutbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.updateActions(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.getRedoAction()</name>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.redoAction</feoutbound>
+                <outbound type="class" confirmed="no">javax.swing.Action</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.app.action.RedoAction</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.getUndoAction()</name>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.undoAction</feoutbound>
+                <outbound type="class" confirmed="no">javax.swing.Action</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.app.action.UndoAction</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.getlabelsRedo()</name>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.labelsRedo</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.getlabelsUndo()</name>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.labelsUndo</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.labelsRedo</name>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.getlabelsRedo()</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.labelsUndo</name>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.getlabelsUndo()</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.redoAction</name>
+                <outbound type="class" confirmed="no">org.jhotdraw.app.action.RedoAction</outbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.getRedoAction()</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</name>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.labelsRedo</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.redoAction</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.updateActions(java.awt.event.ActionEvent)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.event.ActionEvent</outbound>
+                <outbound type="class" confirmed="no">java.lang.InterruptedException</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.notify()</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.wait()</feoutbound>
+                <outbound type="class" confirmed="no">javax.swing.undo.CannotUndoException</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.app.action.RedoAction</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.app.action.RedoAction.actionPerformed(java.awt.event.ActionEvent)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.undoAction</name>
+                <outbound type="class" confirmed="no">org.jhotdraw.app.action.UndoAction</outbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.getUndoAction()</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</name>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.labelsUndo</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.event.ActionEvent</outbound>
+                <feoutbound type="feature" confirmed="no">java.awt.event.ActionEvent.getActionCommand()</feoutbound>
+                <outbound type="class" confirmed="no">java.lang.Object</outbound>
+                <outbound type="class" confirmed="no">java.lang.String</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.String.equals(java.lang.Object)</feoutbound>
+                <outbound type="class" confirmed="no">javax.swing.undo.CannotRedoException</outbound>
+                <outbound type="class" confirmed="no">javax.swing.undo.CannotUndoException</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.util.ResourceBundleUtil.getString(java.lang.String)</feoutbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoData(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.undoOrRedoInProgress</name>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoData(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</name>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.labelsUndo</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.undoAction</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedoInProgress</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.updateActions(java.awt.event.ActionEvent)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.event.ActionEvent</outbound>
+                <outbound type="class" confirmed="no">java.lang.InterruptedException</outbound>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.notify()</feoutbound>
+                <feoutbound type="feature" confirmed="no">java.lang.Object.wait()</feoutbound>
+                <outbound type="class" confirmed="no">javax.swing.undo.CannotUndoException</outbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.app.action.UndoAction</outbound>
+                <feoutbound type="feature" confirmed="no">org.jhotdraw.app.action.UndoAction.actionPerformed(java.awt.event.ActionEvent)</feoutbound>
+                <outbound type="class" confirmed="no">org.jhotdraw.util.ResourceBundleUtil</outbound>
+            </feature>
+            <feature confirmed="yes">
+                <name>UndoRedoManager.updateActions(java.awt.event.ActionEvent)</name>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feoutbound>
+                <feoutbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feoutbound>
+                <outbound type="class" confirmed="no">java.awt.event.ActionEvent</outbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoData(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>java.awt</name>
+        <class confirmed="no">
+            <name>java.awt.Component</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addZoomButtonsTo(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+        </class>
+        <class confirmed="no">
+            <name>java.awt.Graphics</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+        </class>
+        <class confirmed="no">
+            <name>java.awt.Graphics2D</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addZoomButtonsTo(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            <feature confirmed="no">
+                <name>java.awt.Graphics2D.create()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Graphics2D.dispose()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Graphics2D.drawString(java.lang.String, int, int)</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Graphics2D.fillRect(int, int, int, int)</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Graphics2D.getClipBounds()</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Graphics2D.getTransform()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Graphics2D.setTransform(java.awt.geom.AffineTransform)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Graphics2D.translate(double, double)</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.awt.Point</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.viewToDrawing(java.awt.Point)</feinbound>
+            <feature confirmed="no">
+                <name>java.awt.Point.x</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.viewToDrawing(java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Point.y</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.viewToDrawing(java.awt.Point)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.awt.Rectangle</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feature confirmed="no">
+                <name>java.awt.Rectangle.Rectangle(int, int, int, int)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Rectangle.getMaxX()</name>
+                <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Rectangle.getMaxY()</name>
+                <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Rectangle.height</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Rectangle.width</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Rectangle.x</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.Rectangle.y</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>java.awt.event</name>
+        <class confirmed="no">
+            <name>java.awt.event.ActionEvent</name>
+            <feinbound type="feature" confirmed="yes">NetPanel.addStrokeDecorationButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.undoData(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.updateActions(java.awt.event.ActionEvent)</feinbound>
+            <feature confirmed="no">
+                <name>java.awt.event.ActionEvent.getActionCommand()</name>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>java.awt.geom</name>
+        <class confirmed="no">
+            <name>java.awt.geom.AffineTransform</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.getDrawingToViewTransform()</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.t</feinbound>
+            <feature confirmed="no">
+                <name>java.awt.geom.AffineTransform.AffineTransform()</name>
+                <feinbound type="feature" confirmed="yes">SVGPanel.getDrawingToViewTransform()</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.geom.AffineTransform.scale(double, double)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.getDrawingToViewTransform()</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.geom.AffineTransform.setToQuadrantRotation(int, double, double)</name>
+                <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.geom.AffineTransform.translate(double, double)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.getDrawingToViewTransform()</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.awt.geom.Point2D$Double</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.static {}</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.translate</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.PertPanel()</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.getEmptyDrawingMessage()</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.translatePert</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.getDrawingToViewTransform()</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.static {}</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.translateSVG</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.viewToDrawing(java.awt.Point)</feinbound>
+            <feature confirmed="no">
+                <name>java.awt.geom.Point2D$Double.Point2D$Double(double, double)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.static {}</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.PertPanel()</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.static {}</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.viewToDrawing(java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.geom.Point2D$Double.getX()</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.geom.Point2D$Double.getY()</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.geom.Point2D$Double.toString()</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.getEmptyDrawingMessage()</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.geom.Point2D$Double.x</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.getDrawingToViewTransform()</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.viewToDrawing(java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.geom.Point2D$Double.y</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.getDrawingToViewTransform()</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.viewToDrawing(java.awt.Point)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.awt.geom.Rectangle2D$Double</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            <feinbound type="feature" confirmed="yes">SVGPanel.setHasUnsavedChanges(java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feature confirmed="no">
+                <name>java.awt.geom.Rectangle2D$Double.height</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.geom.Rectangle2D$Double.width</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.geom.Rectangle2D$Double.x</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.awt.geom.Rectangle2D$Double.y</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">SVGPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>java.beans</name>
+        <class confirmed="no">
+            <name>java.beans.PropertyChangeListener</name>
+            <feinbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feinbound>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>java.lang</name>
+        <class confirmed="no">
+            <name>java.lang.InterruptedException</name>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</feinbound>
+        </class>
+        <class confirmed="no">
+            <name>java.lang.Object</name>
+            <inbound type="class" confirmed="yes">DrawingPanel</inbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <inbound type="class" confirmed="yes">RestoreDataEdit</inbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.RestoreDataEdit(org.jhotdraw.draw.Figure, java.lang.Object)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.addEdit(javax.swing.undo.UndoableEdit)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.newRestoreData</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.oldRestoreData</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoData(java.lang.Object)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.replaceEdit(javax.swing.undo.UndoableEdit)</feinbound>
+            <inbound type="class" confirmed="yes">UndoRedoManager</inbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feinbound>
+            <feature confirmed="no">
+                <name>java.lang.Object.Object()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.DrawingPanel()</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.RestoreDataEdit(org.jhotdraw.draw.Figure, java.lang.Object)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoRedoManager()</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.lang.Object.hashCode()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.lang.Object.notify()</name>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.lang.Object.toString()</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.lang.Object.wait()</name>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.lang.String</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.getEmptyDrawingMessage()</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.setEmptyDrawingMessage(java.lang.String)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.getEmptyDrawingMessage()</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.setEmptyDrawingMessage(java.lang.String)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feinbound>
+            <feature confirmed="no">
+                <name>java.lang.String.equals(java.lang.Object)</name>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.lang.String.valueOf(int)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.lang.String.valueOf(java.lang.Object)</name>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.lang.StringBuilder</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feature confirmed="no">
+                <name>java.lang.StringBuilder.StringBuilder(java.lang.String)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.lang.StringBuilder.append(java.lang.String)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.lang.StringBuilder.toString()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>java.util</name>
+        <class confirmed="no">
+            <name>java.util.ArrayList</name>
+            <feature confirmed="no">
+                <name>java.util.ArrayList.ArrayList()</name>
+                <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.util.ArrayList.remove(java.lang.Object)</name>
+                <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.util.Collection</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feature confirmed="no">
+                <name>java.util.Collection.iterator()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>java.util.Collection.size()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.util.Iterator</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feature confirmed="no">
+                <name>java.util.Iterator.next()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.util.Locale</name>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+            <feature confirmed="no">
+                <name>java.util.Locale.getDefault()</name>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>java.util.ResourceBundle</name>
+            <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            <feature confirmed="no">
+                <name>java.util.ResourceBundle.clearCache()</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>javax.swing</name>
+        <class confirmed="no">
+            <name>javax.swing.AbstractButton</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addZoomButtonsTo(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+        </class>
+        <class confirmed="no">
+            <name>javax.swing.Action</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addAttributesButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.getRedoAction()</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.getUndoAction()</feinbound>
+        </class>
+        <class confirmed="no">
+            <name>javax.swing.JButton</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addAttributesButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feature confirmed="no">
+                <name>javax.swing.JButton.setFocusable(boolean)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addAttributesButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>javax.swing.JLabel</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.emptyDrawingLabel</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.getEmptyDrawingMessage()</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.setEmptyDrawingMessage(java.lang.String)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+            <feature confirmed="no">
+                <name>javax.swing.JLabel.JLabel(java.lang.String)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.setEmptyDrawingMessage(java.lang.String)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.JLabel.getAlignmentX()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.JLabel.getAlignmentY()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.viewToDrawing(java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.JLabel.getText()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.getEmptyDrawingMessage()</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.setEmptyDrawingMessage(java.lang.String)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.JLabel.paint(java.awt.Graphics)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.JLabel.setHorizontalAlignment(int)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.setEmptyDrawingMessage(java.lang.String)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>javax.swing.JToggleButton</name>
+            <feature confirmed="no">
+                <name>javax.swing.JToggleButton.JToggleButton()</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.JToggleButton.getBounds()</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.JToggleButton.setFocusable(boolean)</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>javax.swing.JToolBar</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addAttributesButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addZoomButtonsTo(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.bar</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.UndoDrawing</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addStrokeDecorationButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.undoData(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feature confirmed="no">
+                <name>javax.swing.JToolBar.JToolBar()</name>
+                <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.JToolBar.add(java.awt.Component)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addZoomButtonsTo(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.JToolBar.add(javax.swing.Action)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addAttributesButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.JToolBar.addSeparator()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoData(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.JToolBar.repaint()</name>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.JToolBar.requestFocus()</name>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>javax.swing.undo</name>
+        <class confirmed="no">
+            <name>javax.swing.undo.CannotRedoException</name>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoData(java.lang.Object)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feinbound>
+        </class>
+        <class confirmed="no">
+            <name>javax.swing.undo.CannotUndoException</name>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</feinbound>
+        </class>
+        <class confirmed="no">
+            <name>javax.swing.undo.UndoableEdit</name>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.addEdit(javax.swing.undo.UndoableEdit)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.replaceEdit(javax.swing.undo.UndoableEdit)</feinbound>
+            <feature confirmed="no">
+                <name>javax.swing.undo.UndoableEdit.addEdit(javax.swing.undo.UndoableEdit)</name>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.addEdit(javax.swing.undo.UndoableEdit)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>javax.swing.undo.UndoableEdit.replaceEdit(javax.swing.undo.UndoableEdit)</name>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.replaceEdit(javax.swing.undo.UndoableEdit)</feinbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>org.jhotdraw.app.action</name>
+        <class confirmed="no">
+            <name>org.jhotdraw.app.action.RedoAction</name>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.getRedoAction()</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.redoAction</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</feinbound>
+            <feature confirmed="no">
+                <name>org.jhotdraw.app.action.RedoAction.actionPerformed(java.awt.event.ActionEvent)</name>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.app.action.RedoAction.putValue(java.lang.String, java.lang.Object)</name>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.app.action.RedoAction.setEnabled(boolean)</name>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.app.action.UndoAction</name>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.getUndoAction()</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.undoAction</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</feinbound>
+            <feature confirmed="no">
+                <name>org.jhotdraw.app.action.UndoAction.actionPerformed(java.awt.event.ActionEvent)</name>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.app.action.UndoAction.putValue(java.lang.String, java.lang.Object)</name>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.app.action.UndoAction.setEnabled(boolean)</name>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>org.jhotdraw.draw</name>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.AttributeKey</name>
+            <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.AttributeKey.toString()</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.Constrainer</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.constrainer</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawingToView(java.awt.geom.Rectangle2D$Double)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.static {}</feinbound>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.Constrainer.draw(java.awt.Graphics2D, org.jhotdraw.draw.DrawingView)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.CreationTool</name>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.CreationTool.CreationTool(org.jhotdraw.draw.Figure)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.DiamondFigure</name>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.DiamondFigure.DiamondFigure()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.DrawingEditor</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addAttributesButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addZoomButtonsTo(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.NetPanel(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addStrokeDecorationButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.DrawingEditor.getDrawingViews()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.DrawingEditor.isEnabled()</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.DrawingEditor.removePropertyChangeListener(java.beans.PropertyChangeListener)</name>
+                <feinbound type="feature" confirmed="yes">NetPanel.undoDrawing(org.jhotdraw.draw.DrawingEditor, javax.swing.JToolBar, java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.DrawingEditor.setEnabled(boolean)</name>
+                <feinbound type="feature" confirmed="yes">NetPanel.NetPanel(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.DrawingView</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.drawDrawing(java.awt.Graphics2D, java.awt.geom.Rectangle2D$Double, java.awt.Point)</feinbound>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.DrawingView.getScaleFactor()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.EllipseFigure</name>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.EllipseFigure.EllipseFigure()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.Figure</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.RestoreDataEdit(org.jhotdraw.draw.Figure, java.lang.Object)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.figure</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoData(java.lang.Object)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.Figure.changed()</name>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoData(java.lang.Object)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.Figure.getRestoreData()</name>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.RestoreDataEdit(org.jhotdraw.draw.Figure, java.lang.Object)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.Figure.restoreTo(java.lang.Object)</name>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoData(java.lang.Object)</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.Figure.willChange()</name>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.redoEdit(java.lang.Object, java.awt.event.ActionEvent)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.GridConstrainer</name>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.GridConstrainer.GridConstrainer(double, double)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.static {}</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.RectangleFigure</name>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.RectangleFigure.RectangleFigure()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.RoundRectangleFigure</name>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.RoundRectangleFigure.RoundRectangleFigure()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.Tool</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>org.jhotdraw.draw.action</name>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.action.DefaultAttributeAction</name>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.DefaultAttributeAction.DefaultAttributeAction(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey)</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.action.JPopupButton</name>
+            <feinbound type="feature" confirmed="yes">NetPanel.NetPanel(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.strokeDecorationPopupButton</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.strokeWidthPopupButton</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.FontButton</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.createPopupButton</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.static {}</feinbound>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.JPopupButton()</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.static {}</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.doClick()</name>
+                <feinbound type="feature" confirmed="yes">NetPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.getAction()</name>
+                <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.getAutoscrolls()</name>
+                <feinbound type="feature" confirmed="yes">NetPanel.NetPanel(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.getBounds()</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.getMousePosition(boolean)</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.isVisible()</name>
+                <feinbound type="feature" confirmed="yes">NetPanel.NetPanel(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.paintImmediately(int, int, int, int)</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.setAction(javax.swing.Action, java.awt.Rectangle)</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.setColumnCount(int, boolean)</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.setFocusable(boolean)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.setLocation(int, int)</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.JPopupButton.setText(java.lang.String)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.action.PickAttributesAction</name>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.PickAttributesAction.PickAttributesAction(org.jhotdraw.draw.DrawingEditor)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addAttributesButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+        </class>
+        <class confirmed="no">
+            <name>org.jhotdraw.draw.action.ToolBarButtonFactory</name>
+            <feature confirmed="no">
+                <name>org.jhotdraw.draw.action.ToolBarButtonFactory.addToolTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.Tool, java.lang.String, org.jhotdraw.util.ResourceBundleUtil)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            </feature>
+        </class>
+    </package>
+    <package confirmed="no">
+        <name>org.jhotdraw.util</name>
+        <class confirmed="no">
+            <name>org.jhotdraw.util.ResourceBundleUtil</name>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.getEmptyDrawingMessage()</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.labels</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.labelsDrawing</feinbound>
+            <feinbound type="feature" confirmed="yes">PertPanel.setEmptyDrawingMessage(java.lang.String)</feinbound>
+            <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.getlabelsRedo()</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.getlabelsUndo()</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.labelsRedo</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.labelsUndo</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.redoProgress(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feinbound>
+            <feinbound type="feature" confirmed="yes">UndoRedoManager.undoProgress(java.awt.event.ActionEvent)</feinbound>
+            <feature confirmed="no">
+                <name>org.jhotdraw.util.ResourceBundleUtil.configureToolBarButton(javax.swing.AbstractButton, java.lang.String)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.util.ResourceBundleUtil.getBundle()</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.util.ResourceBundleUtil.getFormatted(java.lang.String, java.lang.String)</name>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.util.ResourceBundleUtil.getLAFBundle(java.lang.String)</name>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">DrawingPanel.createZoomButton(org.jhotdraw.draw.DrawingEditor, java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addDefaultCreationButtonsTo(org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">NetPanel.addStrokePlacementButtonTo(javax.swing.JToolBar, org.jhotdraw.draw.DrawingEditor)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addColorButtonTo(org.jhotdraw.draw.DrawingEditor, org.jhotdraw.draw.AttributeKey, int)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.addFontButtonsTo()</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.setEmptyDrawingMessage(java.lang.String)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.util.ResourceBundleUtil.getLAFBundle(java.lang.String, java.util.Locale)</name>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.util.ResourceBundleUtil.getString(java.lang.String)</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawGrid(java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.getEmptyDrawingMessage()</feinbound>
+                <feinbound type="feature" confirmed="yes">RestoreDataEdit.getPresentationName()</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.RedoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.UndoactionPerformed(java.awt.event.ActionEvent)</feinbound>
+                <feinbound type="feature" confirmed="yes">UndoRedoManager.undoOrRedo(java.awt.event.ActionEvent)</feinbound>
+            </feature>
+            <feature confirmed="no">
+                <name>org.jhotdraw.util.ResourceBundleUtil.getTip(java.lang.String)</name>
+                <feinbound type="feature" confirmed="yes">PertPanel.drawBackground(java.awt.Graphics2D)</feinbound>
+                <feinbound type="feature" confirmed="yes">PertPanel.setEmptyDrawingMessage(java.lang.String)</feinbound>
+            </feature>
+        </class>
+    </package>
+</dependencies>

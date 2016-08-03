@@ -1,0 +1,19 @@
+**/target/
+/target/
+.classpath
+.project
+/.settings/
+/db/
+/db/**
+999_*.sql
+chromedriver.log
+*.class
+#Test123
+# Package Files #
+*.jar
+*.war
+*.ear
+.idea
+*.iml
+*.ipr
+*.iws
