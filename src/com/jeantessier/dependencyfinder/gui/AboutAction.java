@@ -2,8 +2,8 @@
 ****************************************************
 * REsolution is an automatic software refactoring tool      
 ****************************************************
- *  Copyright (c) 2016, Wang Ying, Yin Hongjian
- *  E-mail: wangying8052@163.com
+ *  Copyright (c) 2016, Wang Ying, Yin Hongjian, YU Hai, ZHU Zhiliang.
+ *  E-mail: yuhai@126.com
  *  All rights reserved.
  *
  * This file is part of REsolution.
@@ -52,8 +52,8 @@ public class AboutAction extends AbstractAction {
         		+ "*****************************************************************************<br>"
         		+"* REsolution is an automatic software refactoring tool<br>"
         		+"******************************************************************************<br>"
-        		+"*  Copyright (c) 2016, Wang Ying, Yin Hongjian<br>"
-        		+"*  E-mail: wangying8052@163.com<br>"
+        		+"*  Copyright (c) 2016, WANG Ying, YIN Hongjian, YU Hai, ZHU Zhiliang<br>"
+        		+"*  E-mail: yuhai@126.com<br>"
         		+"*  All rights reserved.<br>"
         		+"*  <br>"
         		+"*  This file is part of REsolution.<br>"

@@ -1,9 +1,9 @@
 /*
- * ***************************************************
- * REsolution is an automatic software refactoring tool      
- * ***************************************************
- *  Copyright (c) 2016, Wang Ying, Yin Hongjian
- *  E-mail: wangying8052@163.com
+****************************************************
+* REsolution is an automatic software refactoring tool      
+****************************************************
+ *  Copyright (c) 2016, Wang Ying, Yin Hongjian, YU Hai, ZHU Zhiliang.
+ *  E-mail: yuhai@126.com
  *  All rights reserved.
  *
  * This file is part of REsolution.
